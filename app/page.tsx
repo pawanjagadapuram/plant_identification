@@ -43,7 +43,7 @@ export default function Home() {
     setError("");
 
     try {
-      const apiKey = "GOOGLE_API_KEY";
+      const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY!;
       if (!apiKey) {
         throw new Error("API key is not configured");
       }

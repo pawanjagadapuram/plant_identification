@@ -1,4 +1,4 @@
-// File: /home/runner/Plant-Identfier/app/layout.tsx
+// File: C:\Pawan Projects\plant_identification\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
