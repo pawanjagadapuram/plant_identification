@@ -1,24 +1,78 @@
-Welcome to the NextJS 13 base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+# PlantID - AI Plant Identification App 🌿
 
-## Getting Started
+PlantID is a modern web application that uses AI to identify plants from photos and provide detailed information about their characteristics and care requirements. Built with Next.js, TypeScript, and powered by Google's Generative AI.
 
-Hit the run button to start the development server.
+## ✨ Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 📸 Upload photos or capture directly using device camera
+- 🤖 AI-powered plant identification
+- 📊 Detailed plant information including:
+  - Scientific name and family
+  - Physical characteristics
+  - Care instructions
+  - Growing conditions
+  - Native regions
+- 📱 Responsive design for all devices
+- 🎨 Beautiful, animated gradient UI
+- 🖼️ Drag-and-drop image upload
 
-[Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) allow you to create custom request handlers for a given route using the Web Request and Response APIs.
+## 🚀 Getting Started
 
-The `app/api` directory is mapped to `/api/*`. Folders in this directory with files named `route.ts` are treated as [Route handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) instead of pages.
+### Prerequisites
 
-## Learn More
+- Node.js
+- npm or yarn
+- Google Cloud API key with Gemini Vision API access
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+```bash
+git clone https://github.com/pawanjagadapuram/plant_identification.git
+cd plantid
+```
 
-## Productionizing your Next App
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-To make your next App run smoothly in production make sure to deploy your project with [Repl Deployments](https://docs.replit.com/hosting/deployments/about-deployments)!
+3. Create a `.env.local` file in the root directory and add your Google API key:
+```
+GOOGLE_API_KEY=your_api_key_here
+```
 
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
+4. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Programming language
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Google Generative AI](https://cloud.google.com/vertex-ai) - AI model
+- [Lucide React](https://lucide.dev/) - Icons
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+
+## 🎯 Core Components
+
+- `UploadZone`: Handles image upload and camera capture
+- `PlantInfoCard`: Displays plant information
+- `Navbar`: Navigation component
+- `Footer`: Footer component
+
+## 🔒 Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+```
+GOOGLE_API_KEY=your_google_api_key
+```
